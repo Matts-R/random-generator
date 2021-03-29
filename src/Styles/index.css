@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .box {
+  background-color: #f5f0f0;
+  width: 40rem;
+  height: 22rem;
+  position: relative;
+}
+
+.container .box > header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #007CC7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.container .box > div {
+  height: 8rem;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.container .box > div > div {
+  margin-top: 2.5rem;
+  width: 15rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .box > div > div > span {
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 0.5rem;
+}
+
+.container .box > div > div > input {
+  border-radius: 5px;
+  height: 1.5rem;
+  font-size: 1rem;
+}
+
+.container .box footer {
+  height: 9rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container .box footer > span {
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 0.5rem;
+}
+
+.container .box footer > input {
+  border-radius: 5px;
+  height: 1.5rem;
+  width: 15rem;
+  font-size: 1rem;
+}
+
+.container .box footer > button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 1rem;
+  right: 1rem;
+  width: 7rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container .box footer > button > span {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 0.5rem;
+}
+
+.container .box footer > button > img {
+  width: 20px;
+  height: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.container .box footer > button:hover img {
+  transform: rotate(180deg);
+}
